@@ -1,0 +1,61 @@
+<! DOCTYPE html >
+<html>
+    <head>
+        <title>GdCarousel - Readme</title>
+    </head>
+    <body>
+        <div>
+            <h1>GDCarousel v1</h1>
+            <div>
+                <p>GdCarousel est un script vous permettant de cr&eacute;er en une seule ligne un carousel coverflow&eacute;.</p>
+                <p>Aucune biblioth&egrave;que n'est n&eacute;cessaire, oubliez jQuery!</p>
+                <h3>Initialisation</h3>
+                <pre title="Initialisation d'un gdCarousel">var carousel = new gdCarousel(selector[, options]);</pre>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Nom</td>
+                            <td>Type</td>
+                            <td>Description</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>selector</td>
+                            <td>String</td>
+                            <td>cha&icirc;ne de caract&egrave;re ciblant l'&eacute;l&eacute;ment racine du carousel</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>options</td>
+                            <td>Object</td>
+                            <td>
+                                <pre>{
+    [time: {
+        [main:&nbsp; 2500],&nbsp; temps entre chaque rotation (en ms)
+        [sub:&nbsp;&nbsp; 500],&nbsp;&nbsp; dur&eacute;e de la rotation (en ms)
+        [frame: 17]&nbsp;&nbsp;&nbsp;&nbsp; temps entre chaque rafra&icirc;chissement (en ms)
+    }],
+ &nbsp;&nbsp;&nbsp;[displayed: 5],&nbsp;&nbsp;&nbsp;&nbsp; nombre d'&eacute;l&eacute;ments affich&eacute;s en même temps (doit être impaire)
+ &nbsp;&nbsp;&nbsp;[autostart: true]&nbsp;&nbsp; d&eacute;marrage automatique lorsque la page est charg&eacute;e
+}</pre>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Fonctions</h3>
+                <h4>Pause</h4>
+                <pre>carousel.stop();</pre>
+                <h4>D&eacute;marrer</h4>
+                <pre>carousel.start();</pre>
+                <h4>Rotation imm&eacute;diate</h4>
+                <pre>carousel.rotateNow();</pre>
+                <hr>
+                <p>Vos retours sont les bienvenus, pour tout bug ou demande!</p>
+            </div>
+        </div>
+        <p><a href="http://devblog.gerkindevelopment.net">Gerkin Development - Devblog</a>, <a href="NOTICE">license Apache 2.0</a></p>
+    </body>
+</html>
